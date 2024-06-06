@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RequestMapping("/admins")
+@RequestMapping("/api/admins")
 @RestController
 public class AdminController {
     private final UserService userService;

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.loiane.api.user.User;
 import com.loiane.api.user.UserDTO;
 
-@RequestMapping("/auth")
+@RequestMapping("/api/auth")
 @RestController
 public class AuthenticationController {
     private final JwtService jwtService;
