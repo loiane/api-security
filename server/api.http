@@ -1,0 +1,22 @@
+POST http://127.0.0.1:8080/auth/signup
+content-type: application/json
+
+{
+    "fullName": "test",
+    "email": "test",
+    "password": "test"
+}
+### $2a$10$zSQYKByYC2tQjulVXT1WROE1vDcTWX3S9daEY/eSGRGp3Ivf6P1tO
+
+
+POST http://127.0.0.1:8080/auth/login
+content-type: application/json
+
+{
+    "email": "test",
+    "password": "test"
+}
+### "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0IiwiaWF0IjoxNzE3NjM0NDAwLCJleHAiOjE3MTc3MjA4MDB9.VCkzJKabstF2np12hEmKVaFLMfRmC4kvcI76YanvlZU"
+
+GET http://127.0.0.1:8080/users/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0IiwiaWF0IjoxNzE3Njg5NDQ4LCJleHAiOjE3MTc3NzU4NDh9.voMquiSYXiNw3rb-ujq1qEYzw8yOdlIeQWnUmiOLzzg
