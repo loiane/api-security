@@ -19,13 +19,13 @@ content-type: application/json
 ### "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0IiwiaWF0IjoxNzE3NjM0NDAwLCJleHAiOjE3MTc3MjA4MDB9.VCkzJKabstF2np12hEmKVaFLMfRmC4kvcI76YanvlZU"
 
 GET http://127.0.0.1:8080/api/users/me
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlci5hZG1pbkBlbWFpbC5jb20iLCJpYXQiOjE3MTc3MTYyNzcsImV4cCI6MTcxNzgwMjY3N30.4oUwKudMaTIgPWntLGhBF-2WmPMq-8CFD_UARvHTI2A
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlci5hZG1pbkBlbWFpbC5jb20iLCJpYXQiOjE3MTc3NzExMjgsImV4cCI6MTcxNzg1NzUyOH0.6oH3F3rqdj4O21WSLjYTU6AkNChPPcQ0CwSDBrcFTaM
 
 ###
 
 POST http://127.0.0.1:8080/api/products
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlci5hZG1pbkBlbWFpbC5jb20iLCJpYXQiOjE3MTc3MTYyNzcsImV4cCI6MTcxNzgwMjY3N30.4oUwKudMaTIgPWntLGhBF-2WmPMq-8CFD_UARvHTI2A
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlci5hZG1pbkBlbWFpbC5jb20iLCJpYXQiOjE3MTc3NzExMjgsImV4cCI6MTcxNzg1NzUyOH0.6oH3F3rqdj4O21WSLjYTU6AkNChPPcQ0CwSDBrcFTaM
 
 {
     "name": "Product 1",
@@ -35,3 +35,16 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlci5hZG1pbkBlbWFpbC5jb
 
 ###
 GET http://127.0.0.1:8080/api/products
+
+###
+POST http://127.0.0.1:8080/api/orders
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlci5hZG1pbkBlbWFpbC5jb20iLCJpYXQiOjE3MTc3NzExMjgsImV4cCI6MTcxNzg1NzUyOH0.6oH3F3rqdj4O21WSLjYTU6AkNChPPcQ0CwSDBrcFTaM
+
+{
+    "description": "Product"
+}
+
+###
+GET http://127.0.0.1:8080/api/orders?userId=1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlci5hZG1pbkBlbWFpbC5jb20iLCJpYXQiOjE3MTc3NzExMjgsImV4cCI6MTcxNzg1NzUyOH0.6oH3F3rqdj4O21WSLjYTU6AkNChPPcQ0CwSDBrcFTaM
