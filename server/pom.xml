@@ -15,7 +15,7 @@
 	<description>Demo project for Spring Boot for security vulnerabilities</description>
 	<properties>
 		<java.version>22</java.version>
-		<jjwt.version>0.11.5</jjwt.version>
+		<jjwt.version>0.12.5</jjwt.version>
 	</properties>
 	<dependencies>
 		<dependency>
